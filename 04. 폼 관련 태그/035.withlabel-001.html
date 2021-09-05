@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태그사용</title>
+    <style>
+        ul{
+            list-style: nome;
+        }
+        li{
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+    <!--form>h3+(ul>(li>input)*3))-->
+    <form action="">
+        <h3>수강 분야 (복수 선택 가능)</h3>
+        <ul>
+            <li><input type="checkbox" value="grm">문법</li>
+            <li><input type="text"></li>
+            <li><input type="text"></li>
+        </ul>
+        <h3>수강 과목(1과목만 선택 가능)</h3>
+        <ul>
+            
+            <li>
+                <label>
+                <input type="radio" name="subject" value="en">영어회화
+                 </label>
+            </li>
+        
+            <li><input type="text"></li>
+            <li><input type="text"></li>
+            <li><input type="text"></li>
+        </ul>
+    </form>
+
+</body>
+</html>

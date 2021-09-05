@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #fff;
+
+        }
+
+    </style>
+</head>
+<body>
+    <!--javasript-->
+    <script>
+        function dnw() {
+            //dom 객체를 이용해 프로그래스 태그를 변수로 변언
+        
+        var bar = document.getElementById("bar");
+        //돔 객체를 이용해 스팬 태그를 변수로 선어
+        var progress = document.getElementById("progress");
+        var loaded = 0;
+        }
+        var load = function(){
+            loaded += 5;
+            bar.value = loaded;
+            //로디드 값이 100이되면 -.5초마다 실행되는 인터버을 클리어 
+            if(loaded ==100) {
+                clearInterval(dummyLoad);
+            }
+        }
+        //셋 인터버 메소드 일정기간 마다 정해지 ㄴ동작 반복실행
+        var dummyLoad = setInterval(function() {
+            load()
+        },500);
+    </script>
+    <button type ="button" onclick="dwn();">다운로드 시작</button>
+    <progress id="bar" value="0" max="100">
+        <span id ="progress"></span>
+    </progress>
+    
+</body>
+</html>

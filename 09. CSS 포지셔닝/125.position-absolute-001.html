@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position absolute</title>
+    <style>
+        #wrap{
+           float:left;
+           width: 300px;
+           height: 300px;
+           border: 1px solid #ccc;
+        }
+        .box{
+           position: absolute;
+           
+           width:50px;
+           height:50px;
+           background: blue;
+        }
+        #crd1{
+           top:0;
+           left:0;
+        }
+        #crd2{
+           bottom:0;
+           right:0;
+        }
+        #crd3{
+           bottom: 0;
+           left:0;
+        }
+        #crd4{
+           botom:0;
+           left:0;
+        }
+
+        
+        #crd5{
+           top:100px;
+           left:100px;
+        }
+       
+    </style>
+</head>
+<body>
+   <div id="wrap"></div>
+   <div class="box1"> 박스1</div>
+   <div class="box2"> 박스2</div>
+  
+</body>
+</html>

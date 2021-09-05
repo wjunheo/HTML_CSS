@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선형 그라데이션 반복</title>
+    <style>
+        
+        
+        div{
+
+            width: 500px;
+            height: 300px;
+            border-radius:10px 
+           
+        }
+        .grad1{/*45도 (오른쪽 위)*/
+            background: #ccc;
+            background: -webkit-repeating-linear-gradient(circle,white,#ccc 10%);
+            background: -moz-repeating-linear-gradient(circle,white,#ccc 10%);
+            background: -o-repeating-linear-gradient(circle,white,#ccc 10%);
+            /*0~20px  노란색 20 -40 빨간색 그라
+            총 40px 길이의 그라데이션 효과가 반복됨*/
+            background: repeating-linear-gradient(yellow,yellow 20px,red 20px, red 40px);
+        }
+        .grad2{
+            /*45도 (오른쪽 위)*/
+            background: #ccc;
+            background: -webkit-repeating-linear-gradient(circle,white,white 10%,#ccc 10%,#ccc 20%);
+            background: -moz-repeating-linear-gradient(circle,white,#ccc 10%);
+            background: -o-repeating-linear-gradient(circle,white,#ccc 10%);
+            /*0~20px  노란색 20 -40 빨간색 그라
+            총 40px 길이의 그라데이션 효과가 반복됨*/
+            background: repeating-linear-gradient(yellow,yellow 20px,red 20px, red 40px);
+        
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <div class="grad1"></div>
+        
+    </ul>
+    
+</body>
+</html>

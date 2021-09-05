@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style:none;
+        }
+        li{
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <!--h1+form>ul>(li>label>input)*5-->
+    <h1></h1>
+    <form action="">
+        <ul>
+            <li>
+                <label>
+                <!--size속성: 화면에 표출할 문자의 길이 지정--></label>
+                <!--minlength속성 입력할 수 있는 문자 최소실이 지정-->
+                <!--maxlength속성 입력할 수 있는 무자의 최대 길이 지정-->
+                </label for="">
+                   아이디: <input type="text" id="user_id" size="10" minlength="4" maxlength="15">
+                </label>
+                <small style="color: red;">4~15자리 이내의 영문과 숫자</small>
+            </li>
+            <li>
+                <label for="">
+                    이메일: <input type="email" id="user_email">
+                </label>
+            </li>
+            <li><label for="">
+                비밀번호:<input type="password" id="user_email">
+            </label>
+            </li>
+            <li><label for="">
+                <input type="text">
+            </label>
+            </li>
+            <li><label for="">
+                <input type="text">
+            </label>
+            </li>
+        </ul>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modernizr</title>
+    <!--다운 받은 모던니저 링크-->
+    <script src="js/modernizr-custom.js"></script>
+</head>
+<body>
+   <!-- h1+img+script-->
+    <h1>svg 이미지</h1>
+    <img src="images/muffin.svg" alt="">
+    <script>
+        //위에서 만든 img 태그를 변수로 담음
+        var img = document.querySelector("img");
+        if (!Modernizr.svg) {
+            img.setAttribute("src", "images/muffin.png")
+        }
+    </script>
+
+</body>
+</html>
